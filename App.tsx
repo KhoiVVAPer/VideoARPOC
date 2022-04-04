@@ -11,6 +11,8 @@ import RtcEngine, {
   RtcRemoteView,
   VideoRenderMode,
 } from 'react-native-agora';
+import { NativeModules } from 'react-native';
+const { VideoPOCModule } = NativeModules;
 
 import requestCameraAndAudioPermission from './components/Permission';
 import styles from './components/Style';
@@ -35,6 +37,10 @@ const App = () => {
       });
     }
   }, []);
+
+  const onPressNativeModules = () => {
+    VideoPOCModule.createCalendarEvent('testName', 'testLocation');
+  };
 
   useEffect(() => {
     /**
@@ -151,6 +157,9 @@ const App = () => {
           </TouchableOpacity>
           <TouchableOpacity onPress={endCall} style={styles.button}>
             <Text style={styles.buttonText}> End Call </Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={onPressNativeModules} style={styles.button}>
+            <Text style={styles.buttonText}> onPressNativeModules </Text>
           </TouchableOpacity>
         </View>
         {_renderVideos()}

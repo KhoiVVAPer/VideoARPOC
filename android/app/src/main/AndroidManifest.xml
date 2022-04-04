@@ -23,6 +23,15 @@
       android:roundIcon="@mipmap/ic_launcher_round"
       android:allowBackup="false"
       android:theme="@style/AppTheme">
+
+    <activity
+    android:name=".VideoPOCActivity"
+    android:label="VideoPOCActivity"
+    android:launchMode="standard"
+    android:showOnLockScreen="true"
+    android:screenOrientation="sensorPortrait"
+    />
+
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"
