@@ -14,20 +14,14 @@ import com.banuba.agora.plugin.BanubaResourceManager
 import com.banuba.agora.plugin.model.ArEffect
 import com.banuba.sdk.utils.ContextProvider
 import com.videoarpoc.widget.carousel.EffectsCarouselView
-import io.agora.rtc2.*
+import io.agora.rtc2.Constants
+import io.agora.rtc2.IMediaExtensionObserver
+import io.agora.rtc2.IRtcEngineEventHandler
+import io.agora.rtc2.RtcEngine
+import io.agora.rtc2.RtcEngineConfig
 import io.agora.rtc2.video.VideoCanvas
 import io.agora.rtc2.video.VideoEncoderConfiguration
 import kotlinx.android.synthetic.main.activity_main.*
-
-//import com.videoarpoc.widget.carousel.EffectsCarouselView
-//import com.banuba.sdk.utils.ContextProvider
-//import io.agora.rtc2.Constants
-//import io.agora.rtc2.IMediaExtensionObserver
-//import io.agora.rtc2.IRtcEngineEventHandler
-//import io.agora.rtc2.RtcEngine
-//import io.agora.rtc2.RtcEngineConfig
-//import io.agora.rtc2.video.VideoCanvas
-//import io.agora.rtc2.video.VideoEncoderConfiguration
 
 class VideoPOCActivity : AppCompatActivity() {
 
@@ -201,22 +195,13 @@ class VideoPOCActivity : AppCompatActivity() {
             BanubaExtensionManager.KEY_SET_EFFECTS_PATH,
             banubaResourceManager.effectsPath
         )
-    //        agoraRtc.setExtensionProperty(
+//        agoraRtc.setExtensionProperty(
 //            BanubaExtensionManager.VENDOR_NAME,
 //            BanubaExtensionManager.VIDEO_FILTER_NAME,
 //            BanubaExtensionManager.KEY_SET_TOKEN,
 //            BANUBA_CLIENT_TOKEN
 //        )
     }
-//
-//    private fun sendEffectToFilter(effect: String) {
-//        agoraRtc.setExtensionProperty(
-//            BanubaExtensionManager.VENDOR_NAME,
-//            BanubaExtensionManager.VIDEO_FILTER_NAME,
-//            BanubaExtensionManager.KEY_LOAD_EFFECT,
-//            effect
-//        )
-//    }
 
     private fun checkAllPermissionsGranted() = REQUIRED_PERMISSIONS.all {
         ContextCompat.checkSelfPermission(baseContext, it) == PackageManager.PERMISSION_GRANTED
