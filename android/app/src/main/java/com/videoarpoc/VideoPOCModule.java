@@ -20,9 +20,7 @@ public class VideoPOCModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void createCalendarEvent(String name, String location) {
-        Log.d("CalendarModule", "Create event called with name: " + name
-            + " and location: " + location);
+    public void joinChannel() {
         ReactApplicationContext context = getReactApplicationContext();
         Intent myIntent = new Intent(context, VideoPOCActivity.class);
         myIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
