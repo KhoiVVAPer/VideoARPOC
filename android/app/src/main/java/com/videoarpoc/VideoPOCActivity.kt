@@ -201,7 +201,7 @@ class VideoPOCActivity : AppCompatActivity() {
             BanubaExtensionManager.KEY_SET_EFFECTS_PATH,
             banubaResourceManager.effectsPath
         )
-//        agoraRtc.setExtensionProperty(
+    //        agoraRtc.setExtensionProperty(
 //            BanubaExtensionManager.VENDOR_NAME,
 //            BanubaExtensionManager.VIDEO_FILTER_NAME,
 //            BanubaExtensionManager.KEY_SET_TOKEN,

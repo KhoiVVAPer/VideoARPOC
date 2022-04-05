@@ -1,18 +1,12 @@
-import React, { useEffect, useRef, useState } from 'react';
-import {
-  Platform,
-  ScrollView,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import React, {useEffect, useRef, useState} from 'react';
+import {Platform, ScrollView, Text, TouchableOpacity, View} from 'react-native';
 import RtcEngine, {
   RtcLocalView,
   RtcRemoteView,
   VideoRenderMode,
 } from 'react-native-agora';
-import { NativeModules } from 'react-native';
-const { VideoPOCModule } = NativeModules;
+import {NativeModules} from 'react-native';
+const {VideoPOCModule} = NativeModules;
 
 import requestCameraAndAudioPermission from './components/Permission';
 import styles from './components/Style';
@@ -20,8 +14,8 @@ import styles from './components/Style';
 const config = {
   appId: '9b2a051f9ed64160ad9d789e229eacad',
   token:
-    '0069b2a051f9ed64160ad9d789e229eacadIAB9vWwf3DM2YWyZLzRc63RCopAH8c4KwEnXZ1kcZVPLq8hAqakAAAAAEADJZeRXdXxKYgEAAQB1fEpi',
-  channelName: 'khoichannel',
+    '0069b2a051f9ed64160ad9d789e229eacadIADCOKu9sGsm4hf0k3bR6FpTe2jnWMeU1vsD/0yzyUeZMs9dw48AAAAAEADJZeRXnCVNYgEAAQCbJU1i',
+  channelName: 'khoichannel2',
 };
 
 const App = () => {
@@ -48,15 +42,15 @@ const App = () => {
      * @description Function to initialize the Rtc Engine, attach event listeners and actions
      */
     const init = async () => {
-      const { appId } = config;
+      const {appId} = config;
       _engine.current = await RtcEngine.create(appId);
       await _engine.current.enableVideo();
 
-      _engine.current.addListener('Warning', (warn) => {
+      _engine.current.addListener('Warning', warn => {
         console.log('Warning', warn);
       });
 
-      _engine.current.addListener('Error', (err) => {
+      _engine.current.addListener('Error', err => {
         console.log('Error', err);
       });
 
@@ -65,14 +59,14 @@ const App = () => {
         // If new user
         if (peerIds.indexOf(uid) === -1) {
           // Add peer ID to state array
-          setPeerIds((prev) => [...prev, uid]);
+          setPeerIds(prev => [...prev, uid]);
         }
       });
 
       _engine.current.addListener('UserOffline', (uid, reason) => {
         console.log('UserOffline', uid, reason);
         // Remove peer ID from state array
-        setPeerIds((prev) => prev.filter((id) => id !== uid));
+        setPeerIds(prev => prev.filter(id => id !== uid));
       });
 
       // If Local user joins RTC channel
@@ -82,7 +76,7 @@ const App = () => {
           console.log('JoinChannelSuccess', channel, uid, elapsed);
           // Set state variable to true
           setJoined(true);
-        }
+        },
       );
     };
     init();
@@ -95,11 +89,12 @@ const App = () => {
    */
   const startCall = async () => {
     // Join Channel using null token and channel name
+    console.log('config', config.appId, config.channelName, config.token);
     await _engine.current?.joinChannel(
       config.token,
       config.channelName,
       null,
-      0
+      0,
     );
   };
 
@@ -131,9 +126,8 @@ const App = () => {
       <ScrollView
         style={styles.remoteContainer}
         contentContainerStyle={styles.padding}
-        horizontal={true}
-      >
-        {peerIds.map((value) => {
+        horizontal={true}>
+        {peerIds.map(value => {
           return (
             <RtcRemoteView.SurfaceView
               style={styles.remote}
@@ -158,7 +152,9 @@ const App = () => {
           <TouchableOpacity onPress={endCall} style={styles.button}>
             <Text style={styles.buttonText}> End Call </Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={onPressNativeModules} style={styles.button}>
+          <TouchableOpacity
+            onPress={onPressNativeModules}
+            style={styles.button}>
             <Text style={styles.buttonText}> onPressNativeModules </Text>
           </TouchableOpacity>
         </View>
