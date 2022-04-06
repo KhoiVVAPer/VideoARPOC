@@ -1,5 +1,4 @@
 PODS:
-  - AgoraRtcEngine_iOS (3.5.2)
   - boost (1.76.0)
   - CocoaAsyncSocket (7.6.5)
   - DoubleConversion (1.1.6)
@@ -283,9 +282,6 @@ PODS:
   - React-jsinspector (0.68.0)
   - React-logger (0.68.0):
     - glog
-  - react-native-agora (3.5.3):
-    - AgoraRtcEngine_iOS (= 3.5.2)
-    - React
   - React-perflogger (0.68.0)
   - React-RCTActionSheet (0.68.0):
     - React-Core/RCTActionSheetHeaders (= 0.68.0)
@@ -399,7 +395,6 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
-  - react-native-agora (from `../node_modules/react-native-agora`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
@@ -416,7 +411,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - AgoraRtcEngine_iOS
     - CocoaAsyncSocket
     - Flipper
     - Flipper-Boost-iOSX
@@ -470,8 +464,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
-  react-native-agora:
-    :path: "../node_modules/react-native-agora"
   React-perflogger:
     :path: "../node_modules/react-native/ReactCommon/reactperflogger"
   React-RCTActionSheet:
@@ -500,7 +492,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  AgoraRtcEngine_iOS: 3d13806d67e401298558c9a6fb09340a4299afa2
   boost: a7c83b31436843459a1961bfd74b96033dc77234
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: 831926d9b8bf8166fd87886c4abab286c2422662
@@ -532,7 +523,6 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 010a66edf644339f6da72b34208b070089680415
   React-jsinspector: 90f0bfd5d04e0b066c29216a110ffb9a6c34f23f
   React-logger: 8474fefa09d05f573a13c044cb0dfd751d4e52e3
-  react-native-agora: 35578ecf3a97bc500b0be25da8743dd93599b1e3
   React-perflogger: 15cb741d6c2379f4d3fc8f9e4d4e1110ef3020cb
   React-RCTActionSheet: ea9099db0597bd769430db1e2d011fd5fdb7fc5e
   React-RCTAnimation: 252df4749866f2654f37612f839522cac91c1165
