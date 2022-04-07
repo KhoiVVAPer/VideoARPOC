@@ -12,8 +12,6 @@
 		0D7D5DE327FD8CCF00C70BAB /* AgoraRtcKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0D7D5DE227FD8CCF00C70BAB /* AgoraRtcKit */; };
 		0D7D5DEE27FD92B100C70BAB /* BanubaEffectPlayer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7D5DED27FD92B100C70BAB /* BanubaEffectPlayer.xcframework */; };
 		0D7D5DEF27FD92B100C70BAB /* BanubaEffectPlayer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7D5DED27FD92B100C70BAB /* BanubaEffectPlayer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0D7D5DF827FD950200C70BAB /* BanubaFiltersAgoraExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7D5DF727FD950200C70BAB /* BanubaFiltersAgoraExtension.framework */; platformFilter = ios; };
-		0D7D5DF927FD950200C70BAB /* BanubaFiltersAgoraExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7D5DF727FD950200C70BAB /* BanubaFiltersAgoraExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0D7D5DFC27FD97CC00C70BAB /* RCTVideoModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D5DFB27FD97CC00C70BAB /* RCTVideoModule.m */; };
 		0D7D5DFD27FD97CC00C70BAB /* RCTVideoModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D5DFB27FD97CC00C70BAB /* RCTVideoModule.m */; };
 		0D7D5E0127FD9BFB00C70BAB /* VideoPOCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D5E0027FD9BFB00C70BAB /* VideoPOCViewController.swift */; };
@@ -38,6 +36,8 @@
 		0D7D5E3C27FDD9FF00C70BAB /* VideoPOCStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D7D5E3A27FDD9FF00C70BAB /* VideoPOCStoryboard.storyboard */; };
 		0D7D5E4127FDE13600C70BAB /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D5E4027FDE13600C70BAB /* TestView.swift */; };
 		0D7D5E4227FDE13600C70BAB /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D5E4027FDE13600C70BAB /* TestView.swift */; };
+		0D87AA4227FF156A004FD6AF /* BanubaFiltersAgoraExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D87AA4127FF156A004FD6AF /* BanubaFiltersAgoraExtension.framework */; };
+		0D87AA4327FF156A004FD6AF /* BanubaFiltersAgoraExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0D87AA4127FF156A004FD6AF /* BanubaFiltersAgoraExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -62,7 +62,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0D7D5DF927FD950200C70BAB /* BanubaFiltersAgoraExtension.framework in Embed Frameworks */,
+				0D87AA4327FF156A004FD6AF /* BanubaFiltersAgoraExtension.framework in Embed Frameworks */,
 				0D7D5DEF27FD92B100C70BAB /* BanubaEffectPlayer.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -75,7 +75,6 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* VideoARPOCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoARPOCTests.m; sourceTree = "<group>"; };
 		0D7D5DED27FD92B100C70BAB /* BanubaEffectPlayer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BanubaEffectPlayer.xcframework; path = Frameworks/BanubaEffectPlayer.xcframework; sourceTree = "<group>"; };
-		0D7D5DF727FD950200C70BAB /* BanubaFiltersAgoraExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BanubaFiltersAgoraExtension.framework; path = Frameworks/BanubaFiltersAgoraExtension.framework; sourceTree = "<group>"; };
 		0D7D5DFA27FD976C00C70BAB /* RCTVideoModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTVideoModule.h; sourceTree = "<group>"; };
 		0D7D5DFB27FD97CC00C70BAB /* RCTVideoModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTVideoModule.m; sourceTree = "<group>"; };
 		0D7D5DFE27FD9BFB00C70BAB /* VideoARPOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoARPOC-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -92,6 +91,7 @@
 		0D7D5E2B27FDA12100C70BAB /* BanubaJSMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanubaJSMethod.swift; sourceTree = "<group>"; };
 		0D7D5E3A27FDD9FF00C70BAB /* VideoPOCStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VideoPOCStoryboard.storyboard; sourceTree = "<group>"; };
 		0D7D5E4027FDE13600C70BAB /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		0D87AA4127FF156A004FD6AF /* BanubaFiltersAgoraExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BanubaFiltersAgoraExtension.framework; path = ../../../../Downloads/configSDKPlatforms/iOS/Frameworks/BanubaFiltersAgoraExtension.framework; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* VideoARPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoARPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = VideoARPOC/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = VideoARPOC/AppDelegate.mm; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 			files = (
 				0D7D5DEE27FD92B100C70BAB /* BanubaEffectPlayer.xcframework in Frameworks */,
 				0D7D5DE327FD8CCF00C70BAB /* AgoraRtcKit in Frameworks */,
-				0D7D5DF827FD950200C70BAB /* BanubaFiltersAgoraExtension.framework in Frameworks */,
+				0D87AA4227FF156A004FD6AF /* BanubaFiltersAgoraExtension.framework in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-VideoARPOC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,7 +204,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0D7D5DF727FD950200C70BAB /* BanubaFiltersAgoraExtension.framework */,
+				0D87AA4127FF156A004FD6AF /* BanubaFiltersAgoraExtension.framework */,
 				0D7D5DED27FD92B100C70BAB /* BanubaEffectPlayer.xcframework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-VideoARPOC.a */,
