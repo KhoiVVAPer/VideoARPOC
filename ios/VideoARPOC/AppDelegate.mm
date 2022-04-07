@@ -66,10 +66,10 @@
 
   UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"VideoPOCStoryboard" bundle:[NSBundle mainBundle]];
   
-   UIViewController *vc =[storyboard         instantiateViewControllerWithIdentifier:@"myVideoPOCViewController"];
+   UIViewController *vc =[storyboard instantiateViewControllerWithIdentifier:@"myVideoPOCViewController"];
   if(vc != nil) {
     dispatch_async(dispatch_get_main_queue(), ^{
-    self.window.rootViewController = vc;
+      self.window.rootViewController = vc;
     });
   }
 }

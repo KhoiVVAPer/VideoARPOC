@@ -193,8 +193,8 @@
 				0D7D5DFE27FD9BFB00C70BAB /* VideoARPOC-Bridging-Header.h */,
 				0D7D5DFF27FD9BFB00C70BAB /* VideoARPOCTests-Bridging-Header.h */,
 				0D7D5E1C27FDA05800C70BAB /* Token.swift */,
-				0D7D5E1F27FDA09900C70BAB /* BanubaEffectsManager.swift */,
 				0D7D5E2227FDA0AD00C70BAB /* EffectsService.swift */,
+				0D7D5E1F27FDA09900C70BAB /* BanubaEffectsManager.swift */,
 				0D7D5E2B27FDA12100C70BAB /* BanubaJSMethod.swift */,
 				0D7D5E4027FDE13600C70BAB /* TestView.swift */,
 			);

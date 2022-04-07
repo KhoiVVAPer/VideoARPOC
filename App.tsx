@@ -15,7 +15,7 @@ const App = () => {
       <View style={styles.max}>
         <View style={styles.buttonHolder}>
           <TouchableOpacity onPress={joinChannel} style={styles.button}>
-            <Text style={styles.buttonText}> Join native modules </Text>
+            <Text style={styles.buttonText}> Join Channel </Text>
           </TouchableOpacity>
         </View>
       </View>
