@@ -13,7 +13,6 @@
 #import <React/RCTSurfacePresenter.h>
 #import <React/RCTSurfacePresenterBridgeAdapter.h>
 #import <ReactCommon/RCTTurboModuleManager.h>
-
 #import <react/config/ReactNativeConfig.h>
 
 @interface AppDelegate () <RCTCxxBridgeDelegate, RCTTurboModuleManagerDelegate> {
@@ -29,6 +28,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  options = launchOptions;
   RCTAppSetupPrepareApp(application);
 
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
@@ -53,8 +53,25 @@
   UIViewController *rootViewController = [UIViewController new];
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
+  
+  viewController = rootViewController;
+  
   [self.window makeKeyAndVisible];
+  
   return YES;
+}
+
+- (void) goToNativeView {
+  NSLog(@"RN binding - Native View - MyViewController.swift - Load From storyboard");
+
+  UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"VideoPOCStoryboard" bundle:[NSBundle mainBundle]];
+  
+   UIViewController *vc =[storyboard instantiateViewControllerWithIdentifier:@"myVideoPOCViewController"];
+  if(vc != nil) {
+    dispatch_async(dispatch_get_main_queue(), ^{
+      self.window.rootViewController = vc;
+    });
+  }
 }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge

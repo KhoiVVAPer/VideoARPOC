@@ -9,6 +9,35 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* VideoARPOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* VideoARPOCTests.m */; };
 		0C80B921A6F3F58F76C31292 /* libPods-VideoARPOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-VideoARPOC.a */; };
+		0D7D5DE327FD8CCF00C70BAB /* AgoraRtcKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0D7D5DE227FD8CCF00C70BAB /* AgoraRtcKit */; };
+		0D7D5DEE27FD92B100C70BAB /* BanubaEffectPlayer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7D5DED27FD92B100C70BAB /* BanubaEffectPlayer.xcframework */; };
+		0D7D5DEF27FD92B100C70BAB /* BanubaEffectPlayer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7D5DED27FD92B100C70BAB /* BanubaEffectPlayer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0D7D5DFC27FD97CC00C70BAB /* RCTVideoModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D5DFB27FD97CC00C70BAB /* RCTVideoModule.m */; };
+		0D7D5DFD27FD97CC00C70BAB /* RCTVideoModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D5DFB27FD97CC00C70BAB /* RCTVideoModule.m */; };
+		0D7D5E0127FD9BFB00C70BAB /* VideoPOCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D5E0027FD9BFB00C70BAB /* VideoPOCViewController.swift */; };
+		0D7D5E0227FD9BFB00C70BAB /* VideoPOCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D5E0027FD9BFB00C70BAB /* VideoPOCViewController.swift */; };
+		0D7D5E0527FD9C7400C70BAB /* BanubaEffectSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D5E0427FD9C7400C70BAB /* BanubaEffectSelectorView.swift */; };
+		0D7D5E0627FD9C7400C70BAB /* BanubaEffectSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D5E0427FD9C7400C70BAB /* BanubaEffectSelectorView.swift */; };
+		0D7D5E0E27FD9DA900C70BAB /* BanubaEffectSelectorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D7D5E0D27FD9DA900C70BAB /* BanubaEffectSelectorView.xib */; };
+		0D7D5E0F27FD9DA900C70BAB /* BanubaEffectSelectorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D7D5E0D27FD9DA900C70BAB /* BanubaEffectSelectorView.xib */; };
+		0D7D5E1A27FD9F3300C70BAB /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D5E1927FD9F3300C70BAB /* iCarousel.m */; };
+		0D7D5E1B27FD9F3300C70BAB /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D5E1927FD9F3300C70BAB /* iCarousel.m */; };
+		0D7D5E1D27FDA05800C70BAB /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D5E1C27FDA05800C70BAB /* Token.swift */; };
+		0D7D5E1E27FDA05800C70BAB /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D5E1C27FDA05800C70BAB /* Token.swift */; };
+		0D7D5E2027FDA09900C70BAB /* BanubaEffectsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D5E1F27FDA09900C70BAB /* BanubaEffectsManager.swift */; };
+		0D7D5E2127FDA09900C70BAB /* BanubaEffectsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D5E1F27FDA09900C70BAB /* BanubaEffectsManager.swift */; };
+		0D7D5E2327FDA0AD00C70BAB /* EffectsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D5E2227FDA0AD00C70BAB /* EffectsService.swift */; };
+		0D7D5E2427FDA0AD00C70BAB /* EffectsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D5E2227FDA0AD00C70BAB /* EffectsService.swift */; };
+		0D7D5E2927FDA0ED00C70BAB /* effects in Resources */ = {isa = PBXBuildFile; fileRef = 0D7D5E2827FDA0ED00C70BAB /* effects */; };
+		0D7D5E2A27FDA0ED00C70BAB /* effects in Resources */ = {isa = PBXBuildFile; fileRef = 0D7D5E2827FDA0ED00C70BAB /* effects */; };
+		0D7D5E2C27FDA12100C70BAB /* BanubaJSMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D5E2B27FDA12100C70BAB /* BanubaJSMethod.swift */; };
+		0D7D5E2D27FDA12100C70BAB /* BanubaJSMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D5E2B27FDA12100C70BAB /* BanubaJSMethod.swift */; };
+		0D7D5E3B27FDD9FF00C70BAB /* VideoPOCStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D7D5E3A27FDD9FF00C70BAB /* VideoPOCStoryboard.storyboard */; };
+		0D7D5E3C27FDD9FF00C70BAB /* VideoPOCStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D7D5E3A27FDD9FF00C70BAB /* VideoPOCStoryboard.storyboard */; };
+		0D7D5E4127FDE13600C70BAB /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D5E4027FDE13600C70BAB /* TestView.swift */; };
+		0D7D5E4227FDE13600C70BAB /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D5E4027FDE13600C70BAB /* TestView.swift */; };
+		0D87AA4227FF156A004FD6AF /* BanubaFiltersAgoraExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D87AA4127FF156A004FD6AF /* BanubaFiltersAgoraExtension.framework */; };
+		0D87AA4327FF156A004FD6AF /* BanubaFiltersAgoraExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0D87AA4127FF156A004FD6AF /* BanubaFiltersAgoraExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -26,10 +55,43 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0D7D5DEA27FD8D5F00C70BAB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0D87AA4327FF156A004FD6AF /* BanubaFiltersAgoraExtension.framework in Embed Frameworks */,
+				0D7D5DEF27FD92B100C70BAB /* BanubaEffectPlayer.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* VideoARPOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoARPOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* VideoARPOCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoARPOCTests.m; sourceTree = "<group>"; };
+		0D7D5DED27FD92B100C70BAB /* BanubaEffectPlayer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BanubaEffectPlayer.xcframework; path = Frameworks/BanubaEffectPlayer.xcframework; sourceTree = "<group>"; };
+		0D7D5DFA27FD976C00C70BAB /* RCTVideoModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTVideoModule.h; sourceTree = "<group>"; };
+		0D7D5DFB27FD97CC00C70BAB /* RCTVideoModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTVideoModule.m; sourceTree = "<group>"; };
+		0D7D5DFE27FD9BFB00C70BAB /* VideoARPOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoARPOC-Bridging-Header.h"; sourceTree = "<group>"; };
+		0D7D5DFF27FD9BFB00C70BAB /* VideoARPOCTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoARPOCTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		0D7D5E0027FD9BFB00C70BAB /* VideoPOCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPOCViewController.swift; sourceTree = "<group>"; };
+		0D7D5E0427FD9C7400C70BAB /* BanubaEffectSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanubaEffectSelectorView.swift; sourceTree = "<group>"; };
+		0D7D5E0D27FD9DA900C70BAB /* BanubaEffectSelectorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BanubaEffectSelectorView.xib; sourceTree = "<group>"; };
+		0D7D5E1827FD9F2500C70BAB /* iCarousel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		0D7D5E1927FD9F3300C70BAB /* iCarousel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		0D7D5E1C27FDA05800C70BAB /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		0D7D5E1F27FDA09900C70BAB /* BanubaEffectsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanubaEffectsManager.swift; sourceTree = "<group>"; };
+		0D7D5E2227FDA0AD00C70BAB /* EffectsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectsService.swift; sourceTree = "<group>"; };
+		0D7D5E2827FDA0ED00C70BAB /* effects */ = {isa = PBXFileReference; lastKnownFileType = folder; path = effects; sourceTree = "<group>"; };
+		0D7D5E2B27FDA12100C70BAB /* BanubaJSMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanubaJSMethod.swift; sourceTree = "<group>"; };
+		0D7D5E3A27FDD9FF00C70BAB /* VideoPOCStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VideoPOCStoryboard.storyboard; sourceTree = "<group>"; };
+		0D7D5E4027FDE13600C70BAB /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		0D87AA4127FF156A004FD6AF /* BanubaFiltersAgoraExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BanubaFiltersAgoraExtension.framework; path = ../../../../Downloads/configSDKPlatforms/iOS/Frameworks/BanubaFiltersAgoraExtension.framework; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* VideoARPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoARPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = VideoARPOC/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = VideoARPOC/AppDelegate.mm; sourceTree = "<group>"; };
@@ -59,6 +121,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D7D5DEE27FD92B100C70BAB /* BanubaEffectPlayer.xcframework in Frameworks */,
+				0D7D5DE327FD8CCF00C70BAB /* AgoraRtcKit in Frameworks */,
+				0D87AA4227FF156A004FD6AF /* BanubaFiltersAgoraExtension.framework in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-VideoARPOC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,15 +148,55 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0D7D5E0327FD9C4200C70BAB /* BanubaEffectSelectorView */ = {
+			isa = PBXGroup;
+			children = (
+				0D7D5E1627FD9EE500C70BAB /* iCarousel */,
+				0D7D5E0427FD9C7400C70BAB /* BanubaEffectSelectorView.swift */,
+				0D7D5E0D27FD9DA900C70BAB /* BanubaEffectSelectorView.xib */,
+			);
+			name = BanubaEffectSelectorView;
+			sourceTree = "<group>";
+		};
+		0D7D5E1627FD9EE500C70BAB /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				0D7D5E1727FD9F1400C70BAB /* iCarousel */,
+			);
+			name = iCarousel;
+			sourceTree = "<group>";
+		};
+		0D7D5E1727FD9F1400C70BAB /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				0D7D5E1827FD9F2500C70BAB /* iCarousel.h */,
+				0D7D5E1927FD9F3300C70BAB /* iCarousel.m */,
+			);
+			name = iCarousel;
+			sourceTree = "<group>";
+		};
 		13B07FAE1A68108700A75B9A /* VideoARPOC */ = {
 			isa = PBXGroup;
 			children = (
+				0D7D5E0327FD9C4200C70BAB /* BanubaEffectSelectorView */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				0D7D5E2827FDA0ED00C70BAB /* effects */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				0D7D5DFA27FD976C00C70BAB /* RCTVideoModule.h */,
+				0D7D5DFB27FD97CC00C70BAB /* RCTVideoModule.m */,
+				0D7D5E0027FD9BFB00C70BAB /* VideoPOCViewController.swift */,
+				0D7D5E3A27FDD9FF00C70BAB /* VideoPOCStoryboard.storyboard */,
+				0D7D5DFE27FD9BFB00C70BAB /* VideoARPOC-Bridging-Header.h */,
+				0D7D5DFF27FD9BFB00C70BAB /* VideoARPOCTests-Bridging-Header.h */,
+				0D7D5E1C27FDA05800C70BAB /* Token.swift */,
+				0D7D5E2227FDA0AD00C70BAB /* EffectsService.swift */,
+				0D7D5E1F27FDA09900C70BAB /* BanubaEffectsManager.swift */,
+				0D7D5E2B27FDA12100C70BAB /* BanubaJSMethod.swift */,
+				0D7D5E4027FDE13600C70BAB /* TestView.swift */,
 			);
 			name = VideoARPOC;
 			sourceTree = "<group>";
@@ -99,6 +204,8 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0D87AA4127FF156A004FD6AF /* BanubaFiltersAgoraExtension.framework */,
+				0D7D5DED27FD92B100C70BAB /* BanubaEffectPlayer.xcframework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-VideoARPOC.a */,
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-VideoARPOC-VideoARPOCTests.a */,
@@ -184,12 +291,16 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				0D7D5DEA27FD8D5F00C70BAB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = VideoARPOC;
+			packageProductDependencies = (
+				0D7D5DE227FD8CCF00C70BAB /* AgoraRtcKit */,
+			);
 			productName = VideoARPOC;
 			productReference = 13B07F961A680F5B00A75B9A /* VideoARPOC.app */;
 			productType = "com.apple.product-type.application";
@@ -204,10 +315,11 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 1320;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -220,6 +332,9 @@
 				Base,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
+			packageReferences = (
+				0D7D5DE127FD8CCF00C70BAB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS_Preview" */,
+			);
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -235,6 +350,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D7D5E2A27FDA0ED00C70BAB /* effects in Resources */,
+				0D7D5E3C27FDD9FF00C70BAB /* VideoPOCStoryboard.storyboard in Resources */,
+				0D7D5E0F27FD9DA900C70BAB /* BanubaEffectSelectorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,8 +360,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D7D5E0E27FD9DA900C70BAB /* BanubaEffectSelectorView.xib in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				0D7D5E2927FDA0ED00C70BAB /* effects in Resources */,
+				0D7D5E3B27FDD9FF00C70BAB /* VideoPOCStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +373,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -266,7 +387,7 @@
 		};
 		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -402,7 +523,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D7D5E2427FDA0AD00C70BAB /* EffectsService.swift in Sources */,
 				00E356F31AD99517003FC87E /* VideoARPOCTests.m in Sources */,
+				0D7D5E2D27FDA12100C70BAB /* BanubaJSMethod.swift in Sources */,
+				0D7D5E1B27FD9F3300C70BAB /* iCarousel.m in Sources */,
+				0D7D5E0227FD9BFB00C70BAB /* VideoPOCViewController.swift in Sources */,
+				0D7D5E2127FDA09900C70BAB /* BanubaEffectsManager.swift in Sources */,
+				0D7D5E4227FDE13600C70BAB /* TestView.swift in Sources */,
+				0D7D5E1E27FDA05800C70BAB /* Token.swift in Sources */,
+				0D7D5DFD27FD97CC00C70BAB /* RCTVideoModule.m in Sources */,
+				0D7D5E0627FD9C7400C70BAB /* BanubaEffectSelectorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,8 +540,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D7D5E0127FD9BFB00C70BAB /* VideoPOCViewController.swift in Sources */,
+				0D7D5E2027FDA09900C70BAB /* BanubaEffectsManager.swift in Sources */,
+				0D7D5E4127FDE13600C70BAB /* TestView.swift in Sources */,
+				0D7D5E1D27FDA05800C70BAB /* Token.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				0D7D5E2327FDA0AD00C70BAB /* EffectsService.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				0D7D5E2C27FDA12100C70BAB /* BanubaJSMethod.swift in Sources */,
+				0D7D5E1A27FD9F3300C70BAB /* iCarousel.m in Sources */,
+				0D7D5DFC27FD97CC00C70BAB /* RCTVideoModule.m in Sources */,
+				0D7D5E0527FD9C7400C70BAB /* BanubaEffectSelectorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +569,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-VideoARPOC-VideoARPOCTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -449,6 +590,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VideoARPOCTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoARPOC.app/VideoARPOC";
 			};
 			name = Debug;
@@ -457,7 +601,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-VideoARPOC-VideoARPOCTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = VideoARPOCTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -473,6 +619,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VideoARPOCTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoARPOC.app/VideoARPOC";
 			};
 			name = Release;
@@ -484,7 +632,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4V8M2F955;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = VideoARPOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -497,6 +650,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = VideoARPOC;
+				SWIFT_OBJC_BRIDGING_HEADER = "VideoARPOC-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -510,6 +664,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P4V8M2F955;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = VideoARPOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -522,6 +681,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = VideoARPOC;
+				SWIFT_OBJC_BRIDGING_HEADER = "VideoARPOC-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -560,7 +720,6 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -631,7 +790,6 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -693,6 +851,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0D7D5DE127FD8CCF00C70BAB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS_Preview" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/agorabuilder/AgoraRtcEngine_iOS_Preview.git";
+			requirement = {
+				kind = exactVersion;
+				version = "4.0.0-preview.3";
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0D7D5DE227FD8CCF00C70BAB /* AgoraRtcKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0D7D5DE127FD8CCF00C70BAB /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS_Preview" */;
+			productName = AgoraRtcKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
 }

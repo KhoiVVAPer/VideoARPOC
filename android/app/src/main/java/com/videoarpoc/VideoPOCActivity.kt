@@ -12,7 +12,6 @@ import com.banuba.agora.plugin.BanubaEffectsLoader
 import com.banuba.agora.plugin.BanubaExtensionManager
 import com.banuba.agora.plugin.BanubaResourceManager
 import com.banuba.agora.plugin.model.ArEffect
-import com.banuba.sdk.utils.ContextProvider
 import com.videoarpoc.widget.carousel.EffectsCarouselView
 import io.agora.rtc2.Constants
 import io.agora.rtc2.IMediaExtensionObserver
@@ -38,13 +37,27 @@ class VideoPOCActivity : AppCompatActivity() {
         BanubaResourceManager(this)
     }
 
-    private fun setupRemoteVideo(uid: Int): SurfaceView {
-        val surfaceView = RtcEngine.CreateRendererView(this)
-        val videoCanvas = VideoCanvas(surfaceView, VideoCanvas.RENDER_MODE_HIDDEN, uid)
-        agoraRtc.setupRemoteVideo(videoCanvas)
-        return surfaceView
+    private val videoEncoderConfiguration = VideoEncoderConfiguration(
+        VideoEncoderConfiguration.VD_840x480,
+        VideoEncoderConfiguration.FRAME_RATE.FRAME_RATE_FPS_30,
+        VideoEncoderConfiguration.STANDARD_BITRATE,
+        VideoEncoderConfiguration.ORIENTATION_MODE.ORIENTATION_MODE_FIXED_PORTRAIT
+    )
+    private val agoraRtc: RtcEngine by lazy(LazyThreadSafetyMode.NONE) {
+        val config = RtcEngineConfig().apply {
+            mContext = this@VideoPOCActivity
+            mAppId = AGORA_APP_ID
+            System.loadLibrary("banuba")
+            addExtension(BanubaExtensionManager.EXTENSION_NAME)
+            mEventHandler = agoraEventHandler
+            mExtensionObserver = agoraExtensionObserver
+        }
+        Log.d("AgoraRtcEngine","Agora sdk version: ${RtcEngine.getSdkVersion()}")
+        RtcEngine.create(config)
     }
-
+    private val agoraExtensionObserver = IMediaExtensionObserver { vendor, ext, key, value ->
+        Log.d(vendor, "$key - $value")
+    }
     private val agoraEventHandler = object : IRtcEngineEventHandler() {
 
         override fun onJoinChannelSuccess(channel: String, uid: Int, elapsed: Int) {
@@ -64,44 +77,16 @@ class VideoPOCActivity : AppCompatActivity() {
         }
     }
 
-    private val agoraExtensionObserver = IMediaExtensionObserver { vendor, ext, key, value ->
-        Log.d(vendor, "$key - $value")
-    }
-
-    private val agoraRtc: RtcEngine by lazy(LazyThreadSafetyMode.NONE) {
-        val config = RtcEngineConfig().apply {
-            mContext = this@VideoPOCActivity
-            mAppId = AGORA_APP_ID
-            System.loadLibrary("banuba")
-            addExtension(BanubaExtensionManager.EXTENSION_NAME)
-            ContextProvider.setContext(mContext)
-            mEventHandler = agoraEventHandler
-            mExtensionObserver = agoraExtensionObserver
-        }
-        Log.d("AgoraRtcEngine","Agora sdk version: ${RtcEngine.getSdkVersion()}")
-        Log.d("AgoraRtcEngine","Agora sdk version: ${config.toString()}")
-        RtcEngine.create(config)
-    }
-
     private val onEffectPrepared = object : BanubaResourceManager.EffectPreparedCallback {
         override fun onPrepared(effectName: String) {
             sendEffectToFilter(effectName)
         }
     }
-
     private val effectsCarouselCallback = object : EffectsCarouselView.ActionCallback {
         override fun onEffectsSelected(effect: ArEffect) {
-            if (effect == ArEffect.EMPTY) return
             banubaResourceManager.prepareEffect(effect.name, onEffectPrepared)
         }
     }
-
-    private val videoEncoderConfiguration = VideoEncoderConfiguration(
-        VideoEncoderConfiguration.VD_840x480,
-        VideoEncoderConfiguration.FRAME_RATE.FRAME_RATE_FPS_30,
-        VideoEncoderConfiguration.STANDARD_BITRATE,
-        VideoEncoderConfiguration.ORIENTATION_MODE.ORIENTATION_MODE_FIXED_PORTRAIT
-    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -137,15 +122,6 @@ class VideoPOCActivity : AppCompatActivity() {
         super.onRequestPermissionsResult(requestCode, permissions, results)
     }
 
-    private fun sendEffectToFilter(effect: String) {
-        agoraRtc.setExtensionProperty(
-            BanubaExtensionManager.VENDOR_NAME,
-            BanubaExtensionManager.VIDEO_FILTER_NAME,
-            BanubaExtensionManager.KEY_LOAD_EFFECT,
-            effect
-        )
-    }
-
     private fun initAgoraEngine() {
         agoraRtc.enableExtension(
             BanubaExtensionManager.VENDOR_NAME,
@@ -174,14 +150,14 @@ class VideoPOCActivity : AppCompatActivity() {
         )
         return surfaceView
     }
-//
-//    private fun setupRemoteVideo(uid: Int): SurfaceView {
-//        val surfaceView = RtcEngine.CreateRendererView(this)
-//        val videoCanvas = VideoCanvas(surfaceView, VideoCanvas.RENDER_MODE_HIDDEN, uid)
-//        agoraRtc.setupRemoteVideo(videoCanvas)
-//        return surfaceView
-//    }
-//
+
+    private fun setupRemoteVideo(uid: Int): SurfaceView {
+        val surfaceView = RtcEngine.CreateRendererView(this)
+        val videoCanvas = VideoCanvas(surfaceView, VideoCanvas.RENDER_MODE_HIDDEN, uid)
+        agoraRtc.setupRemoteVideo(videoCanvas)
+        return surfaceView
+    }
+
     private fun initBanubaPlugin() {
         agoraRtc.setExtensionProperty(
             BanubaExtensionManager.VENDOR_NAME,
@@ -195,12 +171,21 @@ class VideoPOCActivity : AppCompatActivity() {
             BanubaExtensionManager.KEY_SET_EFFECTS_PATH,
             banubaResourceManager.effectsPath
         )
-//        agoraRtc.setExtensionProperty(
-//            BanubaExtensionManager.VENDOR_NAME,
-//            BanubaExtensionManager.VIDEO_FILTER_NAME,
-//            BanubaExtensionManager.KEY_SET_TOKEN,
-//            BANUBA_CLIENT_TOKEN
-//        )
+        agoraRtc.setExtensionProperty(
+            BanubaExtensionManager.VENDOR_NAME,
+            BanubaExtensionManager.VIDEO_FILTER_NAME,
+            BanubaExtensionManager.KEY_SET_TOKEN,
+            BANUBA_CLIENT_TOKEN
+        )
+    }
+
+    private fun sendEffectToFilter(effect: String) {
+        agoraRtc.setExtensionProperty(
+            BanubaExtensionManager.VENDOR_NAME,
+            BanubaExtensionManager.VIDEO_FILTER_NAME,
+            BanubaExtensionManager.KEY_LOAD_EFFECT,
+            effect
+        )
     }
 
     private fun checkAllPermissionsGranted() = REQUIRED_PERMISSIONS.all {
