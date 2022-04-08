@@ -4,10 +4,11 @@ https://drive.google.com/file/d/162av9zH0acNyKg2BWmx7UeWdsWucFz_A/view?usp=shari
 
 ## Android
 * Copy .aar and jar file SDK archive into libs dir:
- banuba_effect_player-release.aar => android/app/libs/
- banuba-agora-plugin-release.aar => android/app/libs/
- agora-rtc-sdk.jar => android/app/libs/
-* Copy architecture folders from the Agora Video SDK archive into jniLibs dir: arm64-v8a, armeabi-v7a and x86_64 => android/app/src/main/jniLibs/
+banuba_effect_player-release.aar => android/app/libs/,
+banuba-agora-plugin-release.aar => android/app/libs/,
+agora-rtc-sdk.jar => android/app/libs/
+* Copy architecture folders from the Agora Video SDK archive into jniLibs dir: 
+ - arm64-v8a, armeabi-v7a and x86_64 => android/app/src/main/jniLibs/
 * Add your local Face AR effects to app/src/main/assets/effects
 * Copy and Paste your Banuba client token, agora token, app and chanel ID in app/src/main/java/com/videoarpoc/ClientToken.kt 
 * Run project
